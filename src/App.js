@@ -4,6 +4,7 @@ import "./App.css";
 import Banner from "./Components/Banner/Banner.jsx";
 import RowPost from "./Components/RowPost/RowPost.jsx";
 import { action, horror, originals, romance } from "./urls.js";
+import Text from "./Components/Text.jsx";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <RowPost url={action} titles="Action" isSmall />
             <RowPost url={horror} titles="Horror" isSmall />
             <RowPost url={romance} titles="Romance" isSmall />
+            {/* <Text /> */}
         </div>
     );
 }
